@@ -1,6 +1,6 @@
 steps = ApplyYAMLChangeLogVersion, Manifest, DistTest, Commit, Tag, MakeDist, MyUploadCPAN, DistClean, Twitter
 
-svk.tagpattern = //local/cpan/tags/Class-Value-Net-%v
+svk.tagpattern = //local/coderepos/Class-Value-Net/tags/Class-Value-Net-%v
 
 twitter.config = ~/.twitterrc
 twitter.distname = Class-Value-Net
