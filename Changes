@@ -1,52 +1,46 @@
----
-global:
-  name: Class-Value-Net
-releases:
-  - author: 'Marcel Gruenauer <marcel@cpan.org>'
-    changes:
-      - set the version to 0.04
-      - moved generated documentation of interited methods to after documentation of this class' methods so the manpage is more readable
-      - '.shipit: fixed svk.tagpattern'
-    date: 2008-05-29T12:02:16Z
-    tags: []
-    version: 0.04
-  - author: 'Marcel Gruenauer <marcel@cpan.org>'
-    changes:
-      - set the version to 0.03
-      - 'Makefile.PL: now requires Test::CompanionClasses 0.03; earlier versions had a bug in make_real_object()'
-    date: 2007-11-22T13:08:28Z
-    tags: []
-    version: 0.03
-  - author: 'Marcel Gruenauer <marcel@cpan.org>'
-    changes:
-      - Converted Changes file to YAML style
-      - '.shipit: added Twitter step'
-      - 'Makefile.PL: added auto_install() and process_templates()'
-      - 'lib/*: converted to template'
-      - updated MANIFEST
-      - slightly improved documentation
-      - Class::Value::Net::IPAddress::IPv4 and ::IPv6 now subclass Class::Value::SemanticAdapter
-      - added lib/Class/Value/Net/IPAddress/IPv4_TEST.pm
-      - deleted t/README.txt
-      - 'Makefile.PL: require Class::Value::SemanticAdapter, Data::Semantic::Net'
-      - 'Class::Value::Net::IPAddress::IPv4, ::IPv6: inherit from Class::Value::Net::IPAddress, moved is_internal() there'
-      - 'Class::Value::Net::IPAddress::IPv4_TEST: just inherit from Class::Value::Test and Data::Semantic::Net::IPAddress::TestData::IPv4'
-      - 'Class::Value::Net::IPAddress: inherit from Class::Value::SemanticAdapter, remove is_valid_normalized_value(), add semantic_args(), add is_internal()'
-      - 'Class::Value::Net::NAPTR::CharacterString_TEST: adapted to TESTDATA style'
-      - 'Class::Value::Net::NAPTR::Flags_TEST: adapted to TESTDATA style'
-      - 'Class::Value::Net: reflow'
-      - updated MANIFEST
-      - added lib/Class/Value/Net/IPAddress/IPv6_TEST.pm
-      - getting rid of the distinction between well-formedness and validity. Only validity remains
-      - 'Class::Value::Net::IPAddress::IPv4, ::IPv6: replaced pod'
-      - updated t/perlcriticrc
-    date: 2007-11-21T18:21:27Z
-    tags:
-      - NEWFEATURE
-    version: 0.02
-  - author: 'Marcel Gruenauer <marcel@cpan.org>'
-    changes:
-      - original version
-    date: 2007-11-07T09:59:46+01:00
-    tags: []
-    version: 0.01
+Revision history for Perl extension Class-Value-Net
+
+0.04  Thu, 29 May 2008 12:02:16 -0000 (Marcel Gruenauer <marcel@cpan.org>)
+     - set the version to 0.04
+     - moved generated documentation of interited methods to after
+       documentation of this class' methods so the manpage is more readable
+     - .shipit: fixed svk.tagpattern
+
+0.03  Thu, 22 Nov 2007 13:08:28 -0000 (Marcel Gruenauer <marcel@cpan.org>)
+     - set the version to 0.03
+     - Makefile.PL: now requires Test::CompanionClasses 0.03; earlier versions
+       had a bug in make_real_object()
+
+0.02  Wed, 21 Nov 2007 18:21:27 -0000 (Marcel Gruenauer <marcel@cpan.org>)
+     - Converted Changes file to YAML style
+     - .shipit: added Twitter step
+     - Makefile.PL: added auto_install() and process_templates()
+     - lib/*: converted to template
+     - updated MANIFEST
+     - slightly improved documentation
+     - Class::Value::Net::IPAddress::IPv4 and ::IPv6 now subclass
+       Class::Value::SemanticAdapter
+     - added lib/Class/Value/Net/IPAddress/IPv4_TEST.pm
+     - deleted t/README.txt
+     - Makefile.PL: require Class::Value::SemanticAdapter, Data::Semantic::Net
+     - Class::Value::Net::IPAddress::IPv4, ::IPv6: inherit from
+       Class::Value::Net::IPAddress, moved is_internal() there
+     - Class::Value::Net::IPAddress::IPv4_TEST: just inherit from
+       Class::Value::Test and Data::Semantic::Net::IPAddress::TestData::IPv4
+     - Class::Value::Net::IPAddress: inherit from
+       Class::Value::SemanticAdapter, remove is_valid_normalized_value(), add
+       semantic_args(), add is_internal()
+     - Class::Value::Net::NAPTR::CharacterString_TEST: adapted to TESTDATA
+       style
+     - Class::Value::Net::NAPTR::Flags_TEST: adapted to TESTDATA style
+     - Class::Value::Net: reflow
+     - updated MANIFEST
+     - added lib/Class/Value/Net/IPAddress/IPv6_TEST.pm
+     - getting rid of the distinction between well-formedness and validity.
+       Only validity remains
+     - Class::Value::Net::IPAddress::IPv4, ::IPv6: replaced pod
+     - updated t/perlcriticrc
+     - tags: NEWFEATURE
+
+0.01  Wed, 07 Nov 2007 09:59:46 +0100 (Marcel Gruenauer <marcel@cpan.org>)
+     - original version

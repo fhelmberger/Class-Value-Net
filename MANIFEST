@@ -56,10 +56,14 @@ lib/Class/Value/Net/NAPTR/Services.pm
 lib/Class/Value/Net/NAPTR/UInt16.pm
 lib/Class/Value/Net/NAPTR/UInt16_TEST.pm
 lib/Class/Value/Net/NAPTR/Wildcard.pm
+LICENSE
 Makefile.PL
 MANIFEST			This list of files
 META.yml
 README
+t/00_compile.t
+t/00_perl_critic.t
+t/00_pod.t
 t/01_companion_classes.t
 t/02_hostname.t
 t/perlcriticrc
