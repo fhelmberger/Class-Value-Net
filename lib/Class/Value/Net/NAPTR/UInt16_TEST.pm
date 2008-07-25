@@ -8,7 +8,7 @@ use Test::More;
 use Error::Hierarchy::Test 'throws2_ok';
 
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 
 use base 'Test::CompanionClasses::Base';

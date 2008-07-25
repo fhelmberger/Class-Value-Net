@@ -6,7 +6,7 @@ use warnings;
 use strict;
 
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 
 use base 'Class::Value::Net::Exception';

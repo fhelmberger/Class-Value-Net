@@ -7,7 +7,7 @@ use warnings;
 use Error::Hierarchy::Mixin;  # get UNIVERSAL::record needed in subclasses
 
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 
 use base 'Class::Value::String';
