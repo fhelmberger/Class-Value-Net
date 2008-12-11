@@ -22,7 +22,7 @@ __END__
 
 =head1 NAME
 
-Class::Value::Net - network-related value objects
+Class::Value::Net - Network-related value objects
 
 =head1 SYNOPSIS
 
