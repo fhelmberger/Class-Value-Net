@@ -77,13 +77,13 @@ next release will have more documentation.
 
 =over 4
 
-=item clear_forbid_internal
+=item C<clear_forbid_internal>
 
     $obj->clear_forbid_internal;
 
 Clears the boolean value by setting it to 0.
 
-=item forbid_internal
+=item C<forbid_internal>
 
     $obj->forbid_internal($value);
     my $value = $obj->forbid_internal;
@@ -92,19 +92,19 @@ If called without an argument, returns the boolean value (0 or 1). If called
 with an argument, it normalizes it to the boolean value. That is, the values
 0, undef and the empty string become 0; everything else becomes 1.
 
-=item forbid_internal_clear
+=item C<forbid_internal_clear>
 
     $obj->forbid_internal_clear;
 
 Clears the boolean value by setting it to 0.
 
-=item forbid_internal_set
+=item C<forbid_internal_set>
 
     $obj->forbid_internal_set;
 
 Sets the boolean value to 1.
 
-=item set_forbid_internal
+=item C<set_forbid_internal>
 
     $obj->set_forbid_internal;
 

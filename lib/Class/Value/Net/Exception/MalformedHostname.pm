@@ -43,13 +43,13 @@ next release will have more documentation.
 
 =over 4
 
-=item clear_hostname
+=item C<clear_hostname>
 
     $obj->clear_hostname;
 
 Clears the value.
 
-=item hostname
+=item C<hostname>
 
     my $value = $obj->hostname;
     $obj->hostname($value);
@@ -57,7 +57,7 @@ Clears the value.
 A basic getter/setter method. If called without an argument, it returns the
 value. If called with a single argument, it sets the value.
 
-=item hostname_clear
+=item C<hostname_clear>
 
     $obj->hostname_clear;
 

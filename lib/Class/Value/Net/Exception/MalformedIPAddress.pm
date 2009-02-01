@@ -45,13 +45,13 @@ next release will have more documentation.
 
 =over 4
 
-=item clear_ipaddr
+=item C<clear_ipaddr>
 
     $obj->clear_ipaddr;
 
 Clears the value.
 
-=item ipaddr
+=item C<ipaddr>
 
     my $value = $obj->ipaddr;
     $obj->ipaddr($value);
@@ -59,7 +59,7 @@ Clears the value.
 A basic getter/setter method. If called without an argument, it returns the
 value. If called with a single argument, it sets the value.
 
-=item ipaddr_clear
+=item C<ipaddr_clear>
 
     $obj->ipaddr_clear;
 

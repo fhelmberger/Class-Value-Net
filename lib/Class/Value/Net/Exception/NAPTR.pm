@@ -45,13 +45,13 @@ next release will have more documentation.
 
 =over 4
 
-=item clear_recordfield
+=item C<clear_recordfield>
 
     $obj->clear_recordfield;
 
 Clears the value.
 
-=item recordfield
+=item C<recordfield>
 
     my $value = $obj->recordfield;
     $obj->recordfield($value);
@@ -59,7 +59,7 @@ Clears the value.
 A basic getter/setter method. If called without an argument, it returns the
 value. If called with a single argument, it sets the value.
 
-=item recordfield_clear
+=item C<recordfield_clear>
 
     $obj->recordfield_clear;
 
