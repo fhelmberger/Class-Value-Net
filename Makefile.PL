@@ -3,7 +3,10 @@ include 'Module::AutoInstall';
 
 name 'Class-Value-Net';
 all_from 'lib/Class/Value/Net.pm';
-perl_version '5.006';
+
+auto_set_homepage;
+auto_set_bugtracker;
+auto_set_repository;
 
 requires 'Class::Value';
 requires 'Class::Value::SemanticAdapter';

@@ -4,8 +4,11 @@ use warnings;
 use strict;
 use Test::More;
 use Error::Hierarchy::Test 'throws2_ok';
+use Class::Value;
 use Class::Value::Net::Hostname;
 use Error ':try';
+
+$Class::Value::SkipChecks = 0;
 
 my @not_ok_values = qw(
     BAR

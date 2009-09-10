@@ -4,21 +4,16 @@ package Class::Value::Net;
 
 use strict;
 use warnings;
+use 5.006;
 use Error::Hierarchy::Mixin;  # get UNIVERSAL::record needed in subclasses
-
 
 our $VERSION = '0.05';
 
-
 use base 'Class::Value::String';
-
 
 1;
 
-
 __END__
-
-
 
 =head1 NAME
 
@@ -140,11 +135,9 @@ Marcel GrE<uuml>nauer, C<< <marcel@cpan.org> >>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2004-2008 by the authors.
+Copyright 2004-2009 by the authors.
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
 
-
 =cut
-
