@@ -1,24 +1,15 @@
 package Class::Value::Net::NAPTR::CharacterString;
-
-# $Id: CharacterString.pm 11427 2006-05-09 13:00:16Z gr $
-
 use strict;
 use warnings;
-
-
 our $VERSION = '0.05';
-
-
 use base 'Class::Value::Net';
-
 
 sub is_well_formed_value {
     my ($self, $value) = @_;
     return 1 unless defined $value;
     $self->SUPER::is_well_formed_value($value)
-        && $value =~ m/^[\x20-\x7E]*$/;
+      && $value =~ m/^[\x20-\x7E]*$/;
 }
-
 
 sub normalize_value {
     my ($self, $value) = @_;
@@ -27,16 +18,11 @@ sub normalize_value {
     $value;
 }
 
-
 sub stringify {
     my $self = shift;
     sprintf '"%s"', $self->value;
 }
-
-
 1;
-
-
 __END__
 
 
@@ -151,7 +137,7 @@ See perlmodinstall for information and options on installing Perl modules.
 
 The latest version of this module is available from the Comprehensive Perl
 Archive Network (CPAN). Visit <http://www.perl.com/CPAN/> to find a CPAN
-site near you. Or see <http://www.perl.com/CPAN/authors/id/M/MA/MARCEL/>.
+site near you. Or see L<http://search.cpan.org/dist/Class-Value-Net/>.
 
 =head1 AUTHORS
 

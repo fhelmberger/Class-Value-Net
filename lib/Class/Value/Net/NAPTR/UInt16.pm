@@ -1,22 +1,14 @@
 package Class::Value::Net::NAPTR::UInt16;
-
-# $Id: UInt16.pm 11258 2006-04-25 14:47:36Z ek $
-
 use strict;
 use warnings;
-
-
 our $VERSION = '0.05';
-
-
 use base 'Class::Value::Net';
-
 
 sub is_well_formed_value {
     my ($self, $value) = @_;
     return unless defined $value;
-
     no warnings;
+
     # since this apparently has a charset handler now which allows only
     # digits, the only check we have left is the max range (negative numbers
     # don't work, because '-' is not a digit)
@@ -27,15 +19,10 @@ sub is_well_formed_value {
     # about that.
     # all in all: whatever.
     #$value < 0x10000;
-
     # 16 bit unsigned int
     $value + 0 eq $value && $value >= 0 && $value < 0x10000;
 }
-
-
 1;
-
-
 __END__
 
 
@@ -150,7 +137,7 @@ See perlmodinstall for information and options on installing Perl modules.
 
 The latest version of this module is available from the Comprehensive Perl
 Archive Network (CPAN). Visit <http://www.perl.com/CPAN/> to find a CPAN
-site near you. Or see <http://www.perl.com/CPAN/authors/id/M/MA/MARCEL/>.
+site near you. Or see L<http://search.cpan.org/dist/Class-Value-Net/>.
 
 =head1 AUTHORS
 

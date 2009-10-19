@@ -1,21 +1,12 @@
 package Class::Value::Net::IPAddress::IPv6_TEST;
-
 use strict;
 use warnings;
-
-
 our $VERSION = '0.05';
-
-
 use base qw(
-    Class::Value::Test
-    Data::Semantic::Net::IPAddress::TestData::IPv6
+  Class::Value::Test
+  Data::Semantic::Net::IPAddress::TestData::IPv6
 );
-
-
 1;
-
-
 __END__
 
 
@@ -95,7 +86,7 @@ See perlmodinstall for information and options on installing Perl modules.
 
 The latest version of this module is available from the Comprehensive Perl
 Archive Network (CPAN). Visit <http://www.perl.com/CPAN/> to find a CPAN
-site near you. Or see <http://www.perl.com/CPAN/authors/id/M/MA/MARCEL/>.
+site near you. Or see L<http://search.cpan.org/dist/Class-Value-Net/>.
 
 =head1 AUTHORS
 

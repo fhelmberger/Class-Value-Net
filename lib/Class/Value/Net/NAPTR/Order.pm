@@ -1,40 +1,25 @@
 package Class::Value::Net::NAPTR::Order;
-
-# $Id: Order.pm 11149 2006-04-18 16:28:08Z ek $
-
 use strict;
 use warnings;
-
-
 our $VERSION = '0.05';
-
-
 use base 'Class::Value::Net::NAPTR::UInt16';
-
 
 sub send_notify_value_invalid {
     my ($self, $value) = @_;
     local $Error::Depth = $Error::Depth + 2;
     $self->exception_container->record(
-            'Class::Value::Net::Exception::NAPTR::InvalidOrder',
-            recordfield => $value,
-    );
+        'Class::Value::Net::Exception::NAPTR::InvalidOrder',
+        recordfield => $value,);
 }
-
 
 sub send_notify_value_not_wellformed {
     my ($self, $value) = @_;
     local $Error::Depth = $Error::Depth + 2;
     $self->exception_container->record(
-            'Class::Value::Net::Exception::NAPTR::MalformedOrder',
-            recordfield => $value,
-    );
+        'Class::Value::Net::Exception::NAPTR::MalformedOrder',
+        recordfield => $value,);
 }
-
-
 1;
-
-
 __END__
 
 
@@ -154,7 +139,7 @@ See perlmodinstall for information and options on installing Perl modules.
 
 The latest version of this module is available from the Comprehensive Perl
 Archive Network (CPAN). Visit <http://www.perl.com/CPAN/> to find a CPAN
-site near you. Or see <http://www.perl.com/CPAN/authors/id/M/MA/MARCEL/>.
+site near you. Or see L<http://search.cpan.org/dist/Class-Value-Net/>.
 
 =head1 AUTHORS
 

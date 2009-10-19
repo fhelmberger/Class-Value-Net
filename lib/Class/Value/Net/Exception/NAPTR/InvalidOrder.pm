@@ -1,23 +1,10 @@
 package Class::Value::Net::Exception::NAPTR::InvalidOrder;
-
-# $Id: InvalidOrder.pm 11166 2006-04-19 11:31:26Z gr $
-
 use strict;
 use warnings;
-
-
 our $VERSION = '0.05';
-
-
 use base 'Class::Value::Net::Exception::NAPTR';
-
-
 use constant default_message => 'Invalid Order [%s]';
-
-
 1;
-
-
 __END__
 
 
@@ -111,7 +98,7 @@ See perlmodinstall for information and options on installing Perl modules.
 
 The latest version of this module is available from the Comprehensive Perl
 Archive Network (CPAN). Visit <http://www.perl.com/CPAN/> to find a CPAN
-site near you. Or see <http://www.perl.com/CPAN/authors/id/M/MA/MARCEL/>.
+site near you. Or see L<http://search.cpan.org/dist/Class-Value-Net/>.
 
 =head1 AUTHORS
 

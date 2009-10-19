@@ -1,29 +1,12 @@
 package Class::Value::Net::Exception::NAPTR;
-
-# $Id: NAPTR.pm 13653 2007-10-22 09:11:20Z gr $
-
 use warnings;
 use strict;
-
-
 our $VERSION = '0.05';
-
-
 use base 'Class::Value::Net::Exception';
-
-
 __PACKAGE__->mk_scalar_accessors(qw(recordfield));
-
-
-use constant default_message =>
-    'NAPTR error in field [%s]';
-
-use constant PROPERTIES => (qw/recordfield/);
-
-
+use constant default_message => 'NAPTR error in field [%s]';
+use constant PROPERTIES      => (qw/recordfield/);
 1;
-
-
 __END__
 
 
@@ -130,7 +113,7 @@ See perlmodinstall for information and options on installing Perl modules.
 
 The latest version of this module is available from the Comprehensive Perl
 Archive Network (CPAN). Visit <http://www.perl.com/CPAN/> to find a CPAN
-site near you. Or see <http://www.perl.com/CPAN/authors/id/M/MA/MARCEL/>.
+site near you. Or see L<http://search.cpan.org/dist/Class-Value-Net/>.
 
 =head1 AUTHORS
 

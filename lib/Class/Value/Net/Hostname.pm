@@ -1,22 +1,13 @@
 package Class::Value::Net::Hostname;
-
-# $Id: Hostname.pm 11985 2006-08-16 15:03:12Z gr $
-
 use strict;
 use warnings;
-
-
 our $VERSION = '0.05';
-
-
 use base 'Class::Value::Net';
-
 
 # Hostnames can end with a dot; however it will be normalized away. E.g.,
 # 'foo.at.' is valid, but will be normalized to 'foo.at'.
 #
 # An undef value will be normalized to the empty string.
-
 sub normalize_value {
     my ($self, $value) = @_;
     return '' unless defined $value;
@@ -24,36 +15,28 @@ sub normalize_value {
     $value;
 }
 
-
 sub is_valid_normalized_value {
     my ($self, $value) = @_;
 
     # hostname can be undef or the empty string
     return 1 unless defined $value and length $value;
-
     return 0 unless $self->SUPER::is_valid_normalized_value($value);
     our $label_re ||= qr/[0-9a-z]([0-9a-z-]{0,61}[0-9a-z])?/;
     return
-        $value eq lc($value)  &&
-        length($value) <= 255 &&
-        $value =~ /^$label_re(\.$label_re)+$/ &&
-        $value =~ /[a-z]/;
+         $value eq lc($value)
+      && length($value) <= 255
+      && $value =~ /^$label_re(\.$label_re)+$/
+      && $value =~ /[a-z]/;
 }
-
 
 sub send_notify_value_invalid {
     my ($self, $value) = @_;
     local $Error::Depth = $Error::Depth + 2;
     $self->exception_container->record(
         'Class::Value::Net::Exception::MalformedHostname',
-        hostname => $value,
-    );
+        hostname => $value,);
 }
-
-
 1;
-
-
 __END__
 
 
@@ -166,7 +149,7 @@ See perlmodinstall for information and options on installing Perl modules.
 
 The latest version of this module is available from the Comprehensive Perl
 Archive Network (CPAN). Visit <http://www.perl.com/CPAN/> to find a CPAN
-site near you. Or see <http://www.perl.com/CPAN/authors/id/M/MA/MARCEL/>.
+site near you. Or see L<http://search.cpan.org/dist/Class-Value-Net/>.
 
 =head1 AUTHORS
 

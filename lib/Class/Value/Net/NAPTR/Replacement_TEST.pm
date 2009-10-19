@@ -1,36 +1,21 @@
 package Class::Value::Net::NAPTR::Replacement_TEST;
-
-# $Id: Replacement_TEST.pm 11636 2006-06-13 11:27:25Z gr $
-
 use strict;
 use warnings;
 use Test::More;
-
-
 our $VERSION = '0.05';
-
-
 use base 'Test::CompanionClasses::Base';
-
-
 use constant PLAN => 3;
-
 
 sub run {
     my $self = shift;
     $self->SUPER::run(@_);
-
     my $obj = $self->make_real_object;
     $obj->value("");
     is(sprintf("%s", $obj), '.', "stringify empty value to .");
     ok($obj->is_well_formed_value("1234567"), "well-formed");
-    ok(!$obj->is_valid_value('x'x512), "too many chars");
+    ok(!$obj->is_valid_value('x' x 512),      "too many chars");
 }
-
-
 1;
-
-
 __END__
 
 
@@ -107,7 +92,7 @@ See perlmodinstall for information and options on installing Perl modules.
 
 The latest version of this module is available from the Comprehensive Perl
 Archive Network (CPAN). Visit <http://www.perl.com/CPAN/> to find a CPAN
-site near you. Or see <http://www.perl.com/CPAN/authors/id/M/MA/MARCEL/>.
+site near you. Or see L<http://search.cpan.org/dist/Class-Value-Net/>.
 
 =head1 AUTHORS
 

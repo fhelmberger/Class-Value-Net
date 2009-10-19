@@ -1,31 +1,15 @@
 package Class::Value::Net::NAPTR::CharacterString_TEST;
-
-# $Id: CharacterString_TEST.pm 11427 2006-05-09 13:00:16Z gr $
-
 use strict;
 use warnings;
 use Test::More;
-
-
 our $VERSION = '0.05';
-
-
 use base 'Class::Value::Test';
-
-
 use constant TESTDATA => (
-    {
-        args => {},
-        invalid => [
-            sprintf("%c%c%c", 0x00, 0xff, 0x21),
-        ],
+    {   args    => {},
+        invalid => [ sprintf("%c%c%c", 0x00, 0xff, 0x21), ],
     },
 );
-
-
 1;
-
-
 __END__
 
 
@@ -106,7 +90,7 @@ See perlmodinstall for information and options on installing Perl modules.
 
 The latest version of this module is available from the Comprehensive Perl
 Archive Network (CPAN). Visit <http://www.perl.com/CPAN/> to find a CPAN
-site near you. Or see <http://www.perl.com/CPAN/authors/id/M/MA/MARCEL/>.
+site near you. Or see L<http://search.cpan.org/dist/Class-Value-Net/>.
 
 =head1 AUTHORS
 

@@ -1,34 +1,24 @@
 package Class::Value::Net::NAPTR::Flags_TEST;
-
-# $Id: Flags_TEST.pm 11636 2006-06-13 11:27:25Z gr $
-
 use strict;
 use warnings;
 use Test::More;
-
-
 our $VERSION = '0.05';
-
-
 use base 'Class::Value::Test';
-
-
 use constant TESTDATA => (
-    {
-        args => {},
-        valid => [ qw(
-            x
-        ) ],
-        invalid => [ qw(
-            xx
-        ) ],
+    {   args  => {},
+        valid => [
+            qw(
+              x
+              )
+        ],
+        invalid => [
+            qw(
+              xx
+              )
+        ],
     },
 );
-
-
 1;
-
-
 __END__
 
 
@@ -108,7 +98,7 @@ See perlmodinstall for information and options on installing Perl modules.
 
 The latest version of this module is available from the Comprehensive Perl
 Archive Network (CPAN). Visit <http://www.perl.com/CPAN/> to find a CPAN
-site near you. Or see <http://www.perl.com/CPAN/authors/id/M/MA/MARCEL/>.
+site near you. Or see L<http://search.cpan.org/dist/Class-Value-Net/>.
 
 =head1 AUTHORS
 
