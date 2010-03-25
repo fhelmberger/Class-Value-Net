@@ -1,4 +1,7 @@
-Revision history for Perl extension Class-Value-Net
+Revision history for Perl extension {{$dist->name}}
+
+{{$NEXT}}
+    - converted the distribution to Dist::Zilla-style
 
 0.05  Thu Jul 25 15:27:43 CEST 2008 (Marcel Gruenauer <marcel@cpan.org>)
      - Changed dist style and Changes back to standard. People didn't like it -
