@@ -15,6 +15,7 @@ sub run {
     my $obj = $self->make_real_object;
     $obj->value("");
     is(sprintf("%s", $obj), '.', "stringify empty value to .");
+    local $Class::Value::SkipChecks = 0;
     ok($obj->is_well_formed_value("1234567"), "well-formed");
     ok(!$obj->is_valid_value('x' x 512),      "too many chars");
 }

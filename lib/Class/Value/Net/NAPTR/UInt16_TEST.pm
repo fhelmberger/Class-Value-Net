@@ -20,6 +20,7 @@ sub run {
     my $obj = $self->make_real_object;
     ok($obj->is_valid_value(4711), "ok 4711");
     local $Class::Value::ThrowSingleException = 1;
+    local $Class::Value::SkipChecks = 0;
     throws2_ok {
         $obj->value(16663636363);
     }
