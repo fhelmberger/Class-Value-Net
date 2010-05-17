@@ -1,6 +1,7 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
+    - local $Class::Value::SkipChecks = 0; # where necessary
 
 1.100840  2010-03-25 20:16:13 Europe/Vienna
     - converted the distribution to Dist::Zilla-style
