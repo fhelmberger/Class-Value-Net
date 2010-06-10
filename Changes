@@ -1,6 +1,7 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
+    - Class::Value::Net::IPAddress: use Error::Hierarchy::Mixin to get record()
 
 1.101370  2010-05-17 17:45:08 Europe/Vienna
     - local $Class::Value::SkipChecks = 0; # where necessary

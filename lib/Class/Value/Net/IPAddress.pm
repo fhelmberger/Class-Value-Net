@@ -5,6 +5,7 @@ use warnings;
 package Class::Value::Net::IPAddress;
 
 # ABSTRACT: Network-related value objects
+use Error::Hierarchy::Mixin;  # get record() for subclasses
 use parent 'Class::Value::SemanticAdapter';
 __PACKAGE__->mk_abstract_accessors(qw(dns_rr_type))
   ->mk_boolean_accessors(qw(forbid_internal));
