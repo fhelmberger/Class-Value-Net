@@ -1,6 +1,7 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
+    - Class::Value::Net::IPAddress: forbid_internal defaults to 1 now
 
 1.101610  2010-06-10 21:53:36 Europe/Vienna
     - Class::Value::Net::IPAddress: use Error::Hierarchy::Mixin to get record()

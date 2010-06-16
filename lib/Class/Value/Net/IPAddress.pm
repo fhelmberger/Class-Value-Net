@@ -10,6 +10,10 @@ use parent 'Class::Value::SemanticAdapter';
 __PACKAGE__->mk_abstract_accessors(qw(dns_rr_type))
   ->mk_boolean_accessors(qw(forbid_internal));
 
+use constant DEFAULTS => (
+    forbid_internal => 1,
+);
+
 sub semantic_args {
     my $self = shift;
     (   $self->SUPER::semantic_args(@_),
