@@ -1,6 +1,7 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
+    - added minimum version for ::TestData::IPv4
 
 1.101690  2010-06-18 13:04:17 Europe/Vienna
     - Class::Value::Net::IPAddress: forbid_internal defaults to 1 now

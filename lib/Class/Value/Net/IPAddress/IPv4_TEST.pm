@@ -4,6 +4,7 @@ use warnings;
 
 package Class::Value::Net::IPAddress::IPv4_TEST;
 
+use Data::Semantic::Net::IPAddress::TestData::IPv4 1.101730;
 # ABSTRACT: Network-related value objects
 use parent qw(
   Class::Value::Test
