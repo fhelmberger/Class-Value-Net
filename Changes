@@ -1,6 +1,8 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
+
+1.101730  2010-06-22 15:00:24 Europe/Vienna
     - added minimum version for ::TestData::IPv4
 
 1.101690  2010-06-18 13:04:17 Europe/Vienna
