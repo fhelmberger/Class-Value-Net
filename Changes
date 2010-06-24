@@ -1,6 +1,7 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
+    - use Data::Semantic::Net::IPAddress::TestData::IPv4 1.101750
 
 1.101730  2010-06-22 15:00:24 Europe/Vienna
     - added minimum version for ::TestData::IPv4
