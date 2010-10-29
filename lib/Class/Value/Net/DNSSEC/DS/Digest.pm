@@ -6,7 +6,6 @@ package Class::Value::Net::DNSSEC::DS::Digest;
 
 use parent 'Class::Value::String';
 
-
 sub is_valid_string_value {
     my ($self, $value) = @_;
     $value =~ m/^[[:xdigit:]]+$/;

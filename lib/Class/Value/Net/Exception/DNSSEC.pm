@@ -9,3 +9,4 @@ use parent 'Class::Value::Net::Exception';
 __PACKAGE__->mk_scalar_accessors(qw(recordfield));
 use constant default_message => 'DNSSEC error in field [%s]';
 use constant PROPERTIES      => (qw/recordfield/);
+1;
