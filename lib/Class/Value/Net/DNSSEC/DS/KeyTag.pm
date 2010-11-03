@@ -9,6 +9,9 @@ use parent 'Class::Value::String';
 
 sub is_valid_string_value {
     my ($self, $value) = @_;
+    return 1 unless defined($value) && length($value);
+    # Don't call SUPER::; we don't want max length and character set to be
+    # checked
     $value =~ m/^[0-9]*$/ && $value != 0;
 }
 
