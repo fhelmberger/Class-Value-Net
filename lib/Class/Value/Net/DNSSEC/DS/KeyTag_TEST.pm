@@ -8,8 +8,8 @@ use Test::More;
 use parent 'Class::Value::Test';
 use constant TESTDATA => (
     {   args    => {},
-        invalid => [ qw/-1 0 string 47a1 I337 133L/ ],
-        valid   => [ qw/1 255 1024 1337 51220/, '7' x 100 ],
+        invalid => [ qw/-1 string 47a1 I337 133L 65536/ ],
+        valid   => [ qw/0 1 255 1024 1337 51220 65535/ ],
     },
 );
 
