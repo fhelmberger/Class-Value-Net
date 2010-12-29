@@ -18,8 +18,6 @@ sub get_valid_values_list {
         8,         # RSA/SHA-256
         10,        # RSA/SHA-512
         12,        # GOST R 34.10-2001
-        253,       # Private algorithms - domain name
-        254,       # Private algorithms - OID
     ]
 }
 
