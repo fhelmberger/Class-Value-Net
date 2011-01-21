@@ -6,6 +6,12 @@ package Class::Value::Net::DNSSEC::DS::Digest;
 
 use parent 'Class::Value::String';
 
+sub normalize_value {
+    my ($self, $value) = @_;
+    return unless defined($value);
+    lc($value);
+}
+
 sub is_valid_string_value {
     my ($self, $value) = @_;
     return 1 unless defined($value) && length($value);
